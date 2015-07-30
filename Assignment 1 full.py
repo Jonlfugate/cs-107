@@ -44,7 +44,7 @@ def compute_cylinder():
     y=prompt_user("Please enter the height of your Cylinder: ")
     print "The area of your Cylinder is: %f" % (2*3.14159*float(x)*float(y)+2*3.14159*(float(x)*float(x)))
 
-def do_computation(choice,user_name):
+def do_computation(choice):
     if choice == 1:
         compute_square()
     elif choice == 2:
