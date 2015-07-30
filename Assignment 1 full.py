@@ -1,7 +1,7 @@
 __author__ = 'jonatahn fugate'
 import sys
 
-user_name = ""
+
 
 
 def check_valid_number(number):
@@ -44,7 +44,7 @@ def compute_cylinder():
     y=prompt_user("Please enter the height of your Cylinder: ")
     print "The area of your Cylinder is: %f" % (2*3.14159*float(x)*float(y)+2*3.14159*(float(x)*float(x)))
 
-def do_computation(user_choice,user_name):
+def do_computation(choice,user_name):
     if choice == 1:
         compute_square()
     elif choice == 2:
@@ -71,9 +71,9 @@ def main():
     while True:
         print "#1 Area of a Square.\n#2 Area of a Rectangle.\n#3 Area of a Right Triangle.\n#4 Area of a Circle."
         print "#5 Area of a Cylinder.\n#6 Exit. "
-        user_choice = raw_input("Choice")
+        user_choice = raw_input("\nChoice")
         if check_valid_number(user_choice):
-            do_computation(int(user_choice))
+            do_computation(int(user_choice),user_name)
         else:
             print "Please Choose a valid option!\n"
 
