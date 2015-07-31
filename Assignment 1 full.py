@@ -66,7 +66,7 @@ def do_computation(choice, user_name):
 
 
 def main():
-    print "Hello and welcome my name is Area-O-tron-9000"
+    print "Hello and welcome. My name is Area-O-tron-9000"
     user_name = raw_input("What is your name? : ")
     print "Hello %s, I am here to calculate the area of different shapes.\nChose any of these choices" % user_name
 
